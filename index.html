@@ -689,10 +689,26 @@ input[type=text] {
 <!-- ################################################## -->
 <!-- ################################################## -->
 
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-6">
+  <!-- <span class="w3-left w3-padding"></span> -->
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++ -->
   
+  
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++ -->
+
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
@@ -734,7 +750,6 @@ input[type=text] {
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
-
 <!-- ################################################## -->
 <!-- ################################################## -->
 <!-- ################################################## -->
@@ -942,6 +957,7 @@ body {margin:0;height:1000px;}
 <a href="https://news.mistajsay.com" class="facebook"><i class="fa fa-home"></i></a> 
 <a href="#section1" class="twitter"><i class="#"><i class="fas fa-quote-right"></i></a> 
 <a href="#section2" class="google"><i class="#"><i class="fas fa-book"></i></a> 
+<a href="#section3" class="twitter"><i class="fas fa-quote-right"></i></a>  
 <a href="#section4" class="youtube"><i class="#"></i>L4</a>  
 </div>
 
